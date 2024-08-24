@@ -1,0 +1,74 @@
+package com.jawa;
+
+import com.jawa.builder.CodeBuilder;
+import com.jawa.builder.HtmlBuilder;
+import com.jawa.builder.facade.Person;
+import com.jawa.builder.facade.PersonBuilder;
+import com.jawa.builder.fluent.EmployeeBuilder;
+import com.jawa.factory.HotDrink;
+import com.jawa.factory.HotDrinkMachine;
+import com.jawa.solid.ocpandspecification.*;
+import com.jawa.solid.singleresponsibility.Journal;
+import com.jawa.solid.singleresponsibility.Persistor;
+
+import java.io.FileNotFoundException;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        /*Journal journal = new Journal();
+        journal.addEntry("First comment");
+        journal.addEntry("Third comment");
+        System.out.println(journal);
+        new Persistor().persist(journal,"sample.txt",false);*/
+
+        /*Product car = new Product("Car", Color.BLUE, Size.MEDIUM);
+        Product tree = new Product("Tree", Color.GREEN, Size.LARGE);
+        Product house = new Product("House", Color.BLUE, Size.HUGE);
+        Product apple = new Product("Apple", Color.RED, Size.SMALL);
+
+        List<Product> products = List.of(car, house, tree, apple);
+
+        ProductFilter filter = new ProductFilter();
+        filter.filterBySpec(products, new ColorSpecficiation(Color.GREEN))
+                .forEach(p -> System.out.println(p.name + " is green"));
+
+        filter.filterBySpec(products, new AndSpecification<>(
+                new ColorSpecficiation(Color.BLUE),
+                new SizeSpecficiation(Size.HUGE)
+        )).forEach(p -> System.out.println(p.name + " is blue and huge"));*/
+
+        /*HtmlBuilder htmlBuilder = new HtmlBuilder("ul");
+        htmlBuilder.addElement("li", "Java")
+                .addElement("li","scala");
+
+        System.out.println(htmlBuilder.toString());*/
+
+        /*EmployeeBuilder employeeBuilder = new EmployeeBuilder();
+        Person person = employeeBuilder.withName("Jawahar")
+                .withEmployeePosition("Dev")
+                .build();
+        System.out.println(person);*/
+
+        /*PersonBuilder pb = new PersonBuilder();
+        Person person = pb.lives()
+                .at("Veppampattu")
+                .in("Tiruvallur")
+                .code("602024")
+                .works()
+                .worksAt("HCL")
+                .worksAs("Developer")
+                .earns(90344)
+                .build();
+        System.out.println(person);*/
+
+        /*CodeBuilder codeBuilder = new CodeBuilder("Person");
+        codeBuilder.addField("name", "String")
+                .addField("age", "int");
+        System.out.println(codeBuilder);*/
+
+        HotDrinkMachine hotDrinkMachine = new HotDrinkMachine();
+        HotDrink hotDrink = hotDrinkMachine.makeDrink();
+
+    }
+}
