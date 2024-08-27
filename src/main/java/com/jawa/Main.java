@@ -1,18 +1,7 @@
 package com.jawa;
 
-import com.jawa.builder.CodeBuilder;
-import com.jawa.builder.HtmlBuilder;
-import com.jawa.builder.facade.Person;
-import com.jawa.builder.facade.PersonBuilder;
-import com.jawa.builder.fluent.EmployeeBuilder;
-import com.jawa.factory.HotDrink;
-import com.jawa.factory.HotDrinkMachine;
-import com.jawa.solid.ocpandspecification.*;
-import com.jawa.solid.singleresponsibility.Journal;
-import com.jawa.solid.singleresponsibility.Persistor;
-
-import java.io.FileNotFoundException;
-import java.util.List;
+import com.jawa.creational.factory.HotDrink;
+import com.jawa.creational.factory.HotDrinkMachine;
 
 public class Main {
     public static void main(String[] args) throws Exception {
