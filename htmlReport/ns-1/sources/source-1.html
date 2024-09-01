@@ -1,0 +1,167 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > Main</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.jawa</a>
+</div>
+
+<h1>Coverage Summary for Class: Main (com.jawa)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/3)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.jawa;
+&nbsp;
+&nbsp;import com.jawa.creational.factory.HotDrink;
+&nbsp;import com.jawa.creational.factory.HotDrinkMachine;
+&nbsp;
+<b class="nc">&nbsp;public class Main {</b>
+&nbsp;    public static void main(String[] args) throws Exception {
+&nbsp;        /*Journal journal = new Journal();
+&nbsp;        journal.addEntry(&quot;First comment&quot;);
+&nbsp;        journal.addEntry(&quot;Third comment&quot;);
+&nbsp;        System.out.println(journal);
+&nbsp;        new Persistor().persist(journal,&quot;sample.txt&quot;,false);*/
+&nbsp;
+&nbsp;        /*Product car = new Product(&quot;Car&quot;, Color.BLUE, Size.MEDIUM);
+&nbsp;        Product tree = new Product(&quot;Tree&quot;, Color.GREEN, Size.LARGE);
+&nbsp;        Product house = new Product(&quot;House&quot;, Color.BLUE, Size.HUGE);
+&nbsp;        Product apple = new Product(&quot;Apple&quot;, Color.RED, Size.SMALL);
+&nbsp;
+&nbsp;        List&lt;Product&gt; products = List.of(car, house, tree, apple);
+&nbsp;
+&nbsp;        ProductFilter filter = new ProductFilter();
+&nbsp;        filter.filterBySpec(products, new ColorSpecficiation(Color.GREEN))
+&nbsp;                .forEach(p -&gt; System.out.println(p.name + &quot; is green&quot;));
+&nbsp;
+&nbsp;        filter.filterBySpec(products, new AndSpecification&lt;&gt;(
+&nbsp;                new ColorSpecficiation(Color.BLUE),
+&nbsp;                new SizeSpecficiation(Size.HUGE)
+&nbsp;        )).forEach(p -&gt; System.out.println(p.name + &quot; is blue and huge&quot;));*/
+&nbsp;
+&nbsp;        /*HtmlBuilder htmlBuilder = new HtmlBuilder(&quot;ul&quot;);
+&nbsp;        htmlBuilder.addElement(&quot;li&quot;, &quot;Java&quot;)
+&nbsp;                .addElement(&quot;li&quot;,&quot;scala&quot;);
+&nbsp;
+&nbsp;        System.out.println(htmlBuilder.toString());*/
+&nbsp;
+&nbsp;        /*EmployeeBuilder employeeBuilder = new EmployeeBuilder();
+&nbsp;        Person person = employeeBuilder.withName(&quot;Jawahar&quot;)
+&nbsp;                .withEmployeePosition(&quot;Dev&quot;)
+&nbsp;                .build();
+&nbsp;        System.out.println(person);*/
+&nbsp;
+&nbsp;        /*PersonBuilder pb = new PersonBuilder();
+&nbsp;        Person person = pb.lives()
+&nbsp;                .at(&quot;Veppampattu&quot;)
+&nbsp;                .in(&quot;Tiruvallur&quot;)
+&nbsp;                .code(&quot;602024&quot;)
+&nbsp;                .works()
+&nbsp;                .worksAt(&quot;HCL&quot;)
+&nbsp;                .worksAs(&quot;Developer&quot;)
+&nbsp;                .earns(90344)
+&nbsp;                .build();
+&nbsp;        System.out.println(person);*/
+&nbsp;
+&nbsp;        /*CodeBuilder codeBuilder = new CodeBuilder(&quot;Person&quot;);
+&nbsp;        codeBuilder.addField(&quot;name&quot;, &quot;String&quot;)
+&nbsp;                .addField(&quot;age&quot;, &quot;int&quot;);
+&nbsp;        System.out.println(codeBuilder);*/
+&nbsp;
+<b class="nc">&nbsp;        HotDrinkMachine hotDrinkMachine = new HotDrinkMachine();</b>
+<b class="nc">&nbsp;        HotDrink hotDrink = hotDrinkMachine.makeDrink();</b>
+&nbsp;
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-09-01 12:45</div>
+</div>
+</body>
+</html>
