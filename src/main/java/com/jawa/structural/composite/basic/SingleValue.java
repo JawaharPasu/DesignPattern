@@ -1,4 +1,4 @@
-package com.jawa.structural.composite;
+package com.jawa.structural.composite.basic;
 
 import java.util.Collections;
 import java.util.Iterator;

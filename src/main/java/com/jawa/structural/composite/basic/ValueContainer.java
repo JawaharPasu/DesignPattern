@@ -1,4 +1,4 @@
-package com.jawa.structural.composite;
+package com.jawa.structural.composite.basic;
 
 public interface ValueContainer extends Iterable<Integer> {
 }

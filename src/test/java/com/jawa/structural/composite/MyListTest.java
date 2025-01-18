@@ -1,10 +1,12 @@
 package com.jawa.structural.composite;
 
+import com.jawa.structural.composite.basic.ManyValues;
+import com.jawa.structural.composite.basic.MyList;
+import com.jawa.structural.composite.basic.SingleValue;
+import com.jawa.structural.composite.basic.ValueContainer;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class MyListTest extends ArrayList<ValueContainer> {
