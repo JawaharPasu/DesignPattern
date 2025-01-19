@@ -1,0 +1,19 @@
+package com.jawa.behavioral.visitor.classic;
+
+public class DoubleExpression extends Expression {
+
+    private double value;
+
+    public DoubleExpression(double value) {
+        this.value = value;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
+    @Override
+    public void accept(ExpressionVisitor visitor) {
+        visitor.visit(this);
+    }
+}
