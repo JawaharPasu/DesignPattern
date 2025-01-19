@@ -1,0 +1,14 @@
+package com.jawa.behavioral.state.classic;
+
+public class OffState extends State {
+
+    public OffState() {
+        System.out.println("Light turned off");
+    }
+
+    @Override
+    void on(LightSwitch ls) {
+        System.out.println("switching light on..");
+        ls.setState(new OnState());
+    }
+}
